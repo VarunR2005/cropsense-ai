@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+sqlalchemy>=2.0.44
+psycopg2-binary>=2.9.11
+alembic
+pydantic[email]>=2.12
+pydantic-settings
+PyJWT
+bcrypt
+python-multipart
+pandas>=2.3.3
+numpy>=2.3.3
+scikit-learn>=1.7.2
+joblib
+pytest
+httpx

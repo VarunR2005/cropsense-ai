@@ -1,0 +1,113 @@
+{
+ "title": "Farm-level yield report (your saved predictions)",
+ "report_type": "farm",
+ "generated_at": "2026-10-27T06:35:29+00:00",
+ "filters": {
+  "state": null,
+  "district": null,
+  "crop": null,
+  "season": null
+ },
+ "source": {
+  "name": "Your saved CropSense yield predictions",
+  "data_as_of": "2026-10-27",
+  "model": "model information unavailable (model not trained on this server)",
+  "historical_mean": "Mean yield for the same crop and state in the model's training years"
+ },
+ "summary": {
+  "predictions": 3,
+  "total_area_ha": 8.0,
+  "total_predicted_production_t": 23.8
+ },
+ "tables": [
+  {
+   "name": "Saved predictions",
+   "columns": [
+    "date",
+    "state",
+    "district",
+    "crop",
+    "season",
+    "year",
+    "area_ha",
+    "predicted_yield_t_per_ha",
+    "predicted_production_t",
+    "historical_mean_t_per_ha",
+    "difference_vs_history_pct"
+   ],
+   "rows": [
+    [
+     "2026-10-27",
+     "Karnataka",
+     "HASSAN",
+     "Wheat",
+     "Rabi",
+     2015,
+     1.0,
+     2.0,
+     2.0,
+     null,
+     null
+    ],
+    [
+     "2026-10-27",
+     "Karnataka",
+     "MYSORE",
+     "Rice",
+     "Kharif",
+     2015,
+     2.0,
+     3.1,
+     6.2,
+     null,
+     null
+    ],
+    [
+     "2026-10-27",
+     "Karnataka",
+     "MYSORE",
+     "Rice",
+     "Kharif",
+     2015,
+     5.0,
+     3.12,
+     15.6,
+     null,
+     null
+    ]
+   ]
+  }
+ ],
+ "charts": [
+  {
+   "title": "Predicted vs historical mean yield (t/ha), latest predictions",
+   "type": "bar",
+   "x": [
+    "Rice Karnataka",
+    "Rice Karnataka",
+    "Wheat Karnataka"
+   ],
+   "series": [
+    {
+     "name": "predicted",
+     "values": [
+      3.12,
+      3.1,
+      2.0
+     ]
+    },
+    {
+     "name": "historical mean",
+     "values": [
+      null,
+      null,
+      null
+     ]
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Predictions are statistical estimates, not guarantees. Historical mean is blank where the model has no history for that crop and state."
+ ]
+}

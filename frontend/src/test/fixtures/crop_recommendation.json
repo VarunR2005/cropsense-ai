@@ -1,0 +1,126 @@
+{
+ "id": 1,
+ "recommendations": [
+  {
+   "crop": "rice",
+   "suitability_score": 0.93,
+   "growing_requirements": {
+    "N": {
+     "low": 60.0,
+     "high": 99.0
+    },
+    "P": {
+     "low": 35.0,
+     "high": 60.0
+    },
+    "K": {
+     "low": 35.0,
+     "high": 45.0
+    },
+    "temperature": {
+     "low": 20.5,
+     "high": 26.9
+    },
+    "humidity": {
+     "low": 80.2,
+     "high": 84.9
+    },
+    "ph": {
+     "low": 5.0,
+     "high": 7.8
+    },
+    "rainfall": {
+     "low": 183.0,
+     "high": 298.0
+    }
+   }
+  },
+  {
+   "crop": "jute",
+   "suitability_score": 0.05,
+   "growing_requirements": {
+    "N": {
+     "low": 60.0,
+     "high": 99.0
+    },
+    "P": {
+     "low": 35.0,
+     "high": 60.0
+    },
+    "K": {
+     "low": 35.0,
+     "high": 45.0
+    },
+    "temperature": {
+     "low": 20.5,
+     "high": 26.9
+    },
+    "humidity": {
+     "low": 80.2,
+     "high": 84.9
+    },
+    "ph": {
+     "low": 5.0,
+     "high": 7.8
+    },
+    "rainfall": {
+     "low": 183.0,
+     "high": 298.0
+    }
+   }
+  },
+  {
+   "crop": "maize",
+   "suitability_score": 0.01,
+   "growing_requirements": {
+    "N": {
+     "low": 60.0,
+     "high": 99.0
+    },
+    "P": {
+     "low": 35.0,
+     "high": 60.0
+    },
+    "K": {
+     "low": 35.0,
+     "high": 45.0
+    },
+    "temperature": {
+     "low": 20.5,
+     "high": 26.9
+    },
+    "humidity": {
+     "low": 80.2,
+     "high": 84.9
+    },
+    "ph": {
+     "low": 5.0,
+     "high": 7.8
+    },
+    "rainfall": {
+     "low": 183.0,
+     "high": 298.0
+    }
+   }
+  }
+ ],
+ "warnings": [
+  "rainfall=9000.0 is outside the range seen in training (20.2 to 298.6); results are less reliable."
+ ],
+ "model_info": {
+  "model": "RandomForestClassifier",
+  "dataset": "Crop Recommendation Dataset",
+  "trained_at": "2026-10-14T00:00:00+00:00",
+  "metrics": {
+   "accuracy": 0.995,
+   "precision_macro": 0.996,
+   "recall_macro": 0.995,
+   "f1_macro": 0.995
+  }
+ },
+ "notes": [
+  "suitability_score is the share of the model's decision trees voting for that crop (0 to 1). It is a confidence-style score, not a guarantee of success.",
+  "growing_requirements show the typical range (5th-95th percentile) of each factor for that crop in the training data, in the same units you entered.",
+  "Verify with soil testing and local agricultural experts before planting."
+ ]
+}

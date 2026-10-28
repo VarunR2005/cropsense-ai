@@ -1,0 +1,39 @@
+{
+  "_meta": {
+    "status": "Transcribed from FAO Irrigation and Drainage Paper 56 (Allen et al., 1998), pages fetched 14 Oct 2026. Where FAO gives a range, the MIDPOINT is used (noted per crop). Still verify against the source and your local conditions.",
+    "sources": {
+      "kc": "FAO-56 Table 12 (single crop coefficients, sub-humid climate, RHmin ~45%, u2 ~2 m/s): https://www.fao.org/4/x0490E/x0490e0b.htm",
+      "root_depth_and_p": "FAO-56 Table 22 (max effective rooting depth, depletion fraction p for ETc ~5 mm/day): https://www.fao.org/4/x0490E/x0490e0e.htm",
+      "soil_water": "FAO-56 Example 36: loamy sand thetaFC 0.15 / thetaWP 0.06; silt 0.32 / 0.15; silty clay 0.35 / 0.23 (same chapter as Table 22). Other textures: FAO-56 Table 19.",
+      "method": "FAO-56 Eq. 82 (TAW), Eq. 83 (RAW), Eq. 85 and 'Forecasting or allocating irrigations' (irrigate when depletion reaches RAW; net depth equals depletion)."
+    }
+  },
+  "soils": {
+    "loamy_sand": {"theta_fc": 0.15, "theta_wp": 0.06, "awc_mm_per_m": 90, "label": "Loamy sand (light, sandy)"},
+    "silt":       {"theta_fc": 0.32, "theta_wp": 0.15, "awc_mm_per_m": 170, "label": "Silt"},
+    "silty_clay": {"theta_fc": 0.35, "theta_wp": 0.23, "awc_mm_per_m": 120, "label": "Silty clay (heavy, clayey)"}
+  },
+  "stage_root_depth_m_early": 0.3,
+  "crops": {
+    "rice": {"kc_ini": 1.05, "kc_mid": 1.20, "kc_end": 0.75, "root_min_m": 0.5, "root_max_m": 1.0, "p": 0.20, "paddy": true,
+             "note": "Kc end is the midpoint of FAO's 0.90-0.60. Paddy rice: p applies to saturation, so no depletion schedule is produced."},
+    "wheat": {"kc_ini": 0.30, "kc_mid": 1.15, "kc_end": 0.33, "root_min_m": 1.0, "root_max_m": 1.5, "p": 0.55,
+              "note": "FAO 'Spring wheat'. Kc end is the midpoint of 0.25-0.40."},
+    "maize": {"kc_ini": 0.30, "kc_mid": 1.20, "kc_end": 0.48, "root_min_m": 1.0, "root_max_m": 1.7, "p": 0.55,
+              "note": "FAO 'Maize, field (grain)'. Kc end is the midpoint of 0.60-0.35."},
+    "cotton": {"kc_ini": 0.35, "kc_mid": 1.18, "kc_end": 0.60, "root_min_m": 1.0, "root_max_m": 1.7, "p": 0.65,
+               "note": "Kc mid is the midpoint of 1.15-1.20; Kc end the midpoint of 0.70-0.50."},
+    "sugarcane": {"kc_ini": 0.40, "kc_mid": 1.25, "kc_end": 0.75, "root_min_m": 1.2, "root_max_m": 2.0, "p": 0.65, "note": ""},
+    "groundnut": {"kc_ini": 0.40, "kc_mid": 1.15, "kc_end": 0.60, "root_min_m": 0.5, "root_max_m": 1.0, "p": 0.50,
+                  "note": "FAO 'Groundnut (Peanut)'."},
+    "soybean": {"kc_ini": 0.40, "kc_mid": 1.15, "kc_end": 0.50, "root_min_m": 0.6, "root_max_m": 1.3, "p": 0.50, "note": ""},
+    "mustard": {"kc_ini": 0.35, "kc_mid": 1.08, "kc_end": 0.35, "root_min_m": 1.0, "root_max_m": 1.5, "p": 0.60,
+                "note": "PROXY: FAO 'Rapeseed, Canola' (mustard is not listed). Kc mid is the midpoint of 1.0-1.15."},
+    "chickpea": {"kc_ini": 0.40, "kc_mid": 1.00, "kc_end": 0.35, "root_min_m": 0.6, "root_max_m": 1.0, "p": 0.50, "note": ""},
+    "lentil": {"kc_ini": 0.40, "kc_mid": 1.10, "kc_end": 0.30, "root_min_m": 0.6, "root_max_m": 0.8, "p": 0.50, "note": ""},
+    "mungbean": {"kc_ini": 0.40, "kc_mid": 1.05, "kc_end": 0.48, "root_min_m": 0.6, "root_max_m": 1.0, "p": 0.45,
+                 "note": "FAO 'Green Gram and Cowpeas'. Kc end is the midpoint of 0.60 (harvested fresh) and 0.35 (harvested dry)."},
+    "blackgram": {"kc_ini": 0.40, "kc_mid": 1.15, "kc_end": 0.35, "root_min_m": 0.6, "root_max_m": 0.9, "p": 0.45,
+                  "note": "PROXY: FAO 'Beans, dry and Pulses' (black gram is not listed separately)."}
+  }
+}

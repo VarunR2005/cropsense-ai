@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "description": "Rule table for the fertilizer estimator. Nutrient doses are N, P2O5 and K2O in kg per hectare.",
+    "status": "APPROXIMATE general values for Indian conditions. NOT verified against a specific publication.",
+    "source": "TO BE VERIFIED: replace the crop doses and soil-test thresholds with figures from your State Agricultural University / ICAR package of practices (or Soil Health Card guidelines) and cite them in your report.",
+    "how_it_works": "Standard crop dose x soil-test adjustment (low/medium/high) -> nutrient target -> fertilizer kg using nutrient content of each product."
+  },
+  "soil_test_ratings_kg_per_ha": {
+    "N": {"low_below": 280, "high_above": 560},
+    "P": {"low_below": 10, "high_above": 25},
+    "K": {"low_below": 110, "high_above": 280}
+  },
+  "rating_adjustment": {"low": 1.25, "medium": 1.0, "high": 0.75},
+  "fertilizers": {
+    "urea": {"N": 46},
+    "dap": {"N": 18, "P2O5": 46},
+    "ssp": {"P2O5": 16},
+    "mop": {"K2O": 60}
+  },
+  "crops": {
+    "rice":      {"N": 100, "P2O5": 50, "K2O": 50},
+    "wheat":     {"N": 120, "P2O5": 60, "K2O": 40},
+    "maize":     {"N": 120, "P2O5": 60, "K2O": 40},
+    "cotton":    {"N": 100, "P2O5": 50, "K2O": 50},
+    "jute":      {"N": 60,  "P2O5": 30, "K2O": 30},
+    "sugarcane": {"N": 250, "P2O5": 100, "K2O": 120},
+    "groundnut": {"N": 20,  "P2O5": 40, "K2O": 40},
+    "soybean":   {"N": 30,  "P2O5": 60, "K2O": 40},
+    "mustard":   {"N": 80,  "P2O5": 40, "K2O": 40},
+    "chickpea":  {"N": 20,  "P2O5": 40, "K2O": 20},
+    "lentil":    {"N": 20,  "P2O5": 40, "K2O": 20},
+    "blackgram": {"N": 20,  "P2O5": 40, "K2O": 20},
+    "mungbean":  {"N": 20,  "P2O5": 40, "K2O": 20},
+    "pigeonpeas": {"N": 20, "P2O5": 50, "K2O": 20}
+  }
+}

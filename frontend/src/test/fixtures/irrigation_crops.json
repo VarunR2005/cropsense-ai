@@ -1,0 +1,16 @@
+{
+ "crops": [
+  "blackgram",
+  "chickpea",
+  "cotton",
+  "groundnut",
+  "lentil",
+  "maize",
+  "mungbean",
+  "mustard",
+  "rice",
+  "soybean",
+  "sugarcane",
+  "wheat"
+ ]
+}

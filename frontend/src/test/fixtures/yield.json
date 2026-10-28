@@ -1,0 +1,51 @@
+{
+ "id": 1,
+ "state": "Karnataka",
+ "district": "MYSORE",
+ "crop": "Rice",
+ "season": "Kharif",
+ "year": 2015,
+ "area_ha": 5.0,
+ "predicted_yield_t_per_ha": 3.12,
+ "estimated_total_production_tonnes": 15.6,
+ "historical_comparison": {
+  "historical_years": [
+   1997,
+   2012
+  ],
+  "crop_state_mean_t_per_ha": 2.9,
+  "crop_state_records": 120,
+  "crop_national_mean_t_per_ha": 2.4,
+  "difference_vs_state_mean_pct": 7.6
+ },
+ "model_info": {
+  "model": "RandomForestRegressor",
+  "dataset": "Crop Production in India (crop_production.csv)",
+  "trained_at": "2026-10-14T00:00:00+00:00",
+  "features_used": [
+   "State_Name",
+   "District_Name",
+   "Crop",
+   "Season",
+   "Crop_Year",
+   "Area"
+  ],
+  "test_years": [
+   2013,
+   2014,
+   2015
+  ],
+  "metrics": {
+   "mae_t_per_ha": 1.16,
+   "rmse_t_per_ha": 3.67,
+   "r2": 0.915,
+   "baseline_crop_mean_mae_t_per_ha": 2.19,
+   "baseline_crop_mean_r2": 0.73
+  }
+ },
+ "notes": [
+  "This is a statistical estimate, not guaranteed. Verify with soil testing and local agricultural experts.",
+  "Units: yield in tonnes per hectare (t/ha); production in tonnes.",
+  "Saved but NOT used by this model version (the training dataset has no such columns): soil_ph"
+ ]
+}

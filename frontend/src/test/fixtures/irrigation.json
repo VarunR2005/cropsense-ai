@@ -1,0 +1,112 @@
+{
+ "id": 1,
+ "crop": "maize",
+ "growth_stage": "mid",
+ "soil_type": "silt",
+ "soil_moisture_start": "dry",
+ "summary": "No irrigation is suggested in the forecast window: stored soil water plus forecast rain should cover crop use. Check your soil moisture in the field.",
+ "irrigation_events": [],
+ "daily": [
+  {
+   "date": "2026-10-15",
+   "partial_day": true,
+   "et0_mm": 1.75,
+   "etc_mm": 2.1,
+   "rain_mm": 27.0,
+   "effective_rain_mm": 21.6,
+   "raw_mm": 111.2,
+   "depletion_end_mm": 74.0,
+   "irrigation_net_mm": 0.0
+  },
+  {
+   "date": "2026-10-16",
+   "partial_day": false,
+   "et0_mm": 1.99,
+   "etc_mm": 2.39,
+   "rain_mm": 36.0,
+   "effective_rain_mm": 28.8,
+   "raw_mm": 111.2,
+   "depletion_end_mm": 47.6,
+   "irrigation_net_mm": 0.0
+  },
+  {
+   "date": "2026-10-17",
+   "partial_day": false,
+   "et0_mm": 1.99,
+   "etc_mm": 2.38,
+   "rain_mm": 36.0,
+   "effective_rain_mm": 28.8,
+   "raw_mm": 111.3,
+   "depletion_end_mm": 21.2,
+   "irrigation_net_mm": 0.0
+  },
+  {
+   "date": "2026-10-18",
+   "partial_day": false,
+   "et0_mm": 1.98,
+   "etc_mm": 2.38,
+   "rain_mm": 36.0,
+   "effective_rain_mm": 28.8,
+   "raw_mm": 111.3,
+   "depletion_end_mm": 2.4,
+   "irrigation_net_mm": 0.0
+  },
+  {
+   "date": "2026-10-19",
+   "partial_day": false,
+   "et0_mm": 1.98,
+   "etc_mm": 2.37,
+   "rain_mm": 36.0,
+   "effective_rain_mm": 28.8,
+   "raw_mm": 111.4,
+   "depletion_end_mm": 2.4,
+   "irrigation_net_mm": 0.0
+  },
+  {
+   "date": "2026-10-20",
+   "partial_day": true,
+   "et0_mm": 0.0,
+   "etc_mm": 0.0,
+   "rain_mm": 9.0,
+   "effective_rain_mm": 7.2,
+   "raw_mm": 127.5,
+   "depletion_end_mm": 0.0,
+   "irrigation_net_mm": 0.0
+  }
+ ],
+ "totals": {
+  "etc_mm": 11.6,
+  "effective_rain_mm": 144.0,
+  "irrigation_net_mm": 0,
+  "irrigation_m3_per_ha": 0,
+  "irrigation_m3_for_your_area": 0.0
+ },
+ "assumptions": {
+  "kc": 1.2,
+  "kc_source": "FAO-56 Table 12 (sub-humid climate); development/late use the stage midpoint of the linear ramp",
+  "root_depth_m": 1.0,
+  "root_depth_rule": "FAO's smaller Zr value for scheduling, scaled by stage (0.3 m early) - a simplification",
+  "soil_water_holding_mm_per_m": 170,
+  "taw_mm": 170.0,
+  "raw_mm_at_start": 93.5,
+  "depletion_fraction_p": 0.55,
+  "et0_method": "Hargreaves (FAO-56 Eq. 52) from forecast Tmin/Tmax; rough, can be off by a wide margin",
+  "effective_rain": "80% of rain counted (my assumption for runoff); rain below 0.2 x ET0 ignored (FAO-56)",
+  "initial_moisture": "readily available water used up (irrigation due)",
+  "not_included": "capillary rise, salinity, runoff modelling, crop stress effects, local Kc adjustments for humidity and wind"
+ },
+ "notes": [
+  "ESTIMATE only, not guaranteed agricultural advice. Verify with field soil-moisture checks and local experts.",
+  "Water amounts are NET depths reaching the root zone. The volume you must pump or release is larger and depends on your irrigation method and losses.",
+  "Only the 5-day forecast window is covered; run it again as new forecasts arrive.",
+  "Crop data note: FAO 'Maize, field (grain)'. Kc end is the midpoint of 0.60-0.35."
+ ],
+ "weather_source": {
+  "provider": "OpenWeatherMap",
+  "location": "Mysore",
+  "fetched_at": "2026-10-27T06:35:29.547494+00:00",
+  "cached": false,
+  "stale": false
+ },
+ "disclaimer": "ESTIMATE based on a simplified FAO-56 water balance and a weather forecast. It is not guaranteed agricultural advice: check soil moisture in your field and consult local experts."
+}

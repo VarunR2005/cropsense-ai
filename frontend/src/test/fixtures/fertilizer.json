@@ -1,0 +1,55 @@
+{
+ "id": 1,
+ "crop": "rice",
+ "soil_test_ratings": {
+  "N": "low",
+  "P": "low",
+  "K": "medium"
+ },
+ "standard_dose_kg_per_ha": {
+  "N": 100,
+  "P2O5": 50,
+  "K2O": 50
+ },
+ "nutrient_target_kg_per_ha": {
+  "N": 125.0,
+  "P2O5": 62.5,
+  "K2O": 50.0
+ },
+ "fertilizers": [
+  {
+   "fertilizer": "DAP (18-46-0)",
+   "kg_per_ha": 135.9,
+   "supplies": "62.5 kg P2O5/ha and 24.5 kg N/ha",
+   "reason": "Phosphorus: soil P is rated low, so the standard 50 kg P2O5/ha is adjusted to 125% = 62.5 kg/ha. DAP is the P source and also supplies some N.",
+   "kg_for_your_area": 110.0
+  },
+  {
+   "fertilizer": "Urea (46% N)",
+   "kg_per_ha": 218.6,
+   "supplies": "100.5 kg N/ha",
+   "reason": "Nitrogen: soil N is rated low, so the standard 100 kg N/ha is adjusted to 125% = 125.0 kg/ha. Urea covers what DAP does not (100.5 kg N/ha).",
+   "kg_for_your_area": 176.9
+  },
+  {
+   "fertilizer": "MOP / Muriate of Potash (60% K2O)",
+   "kg_per_ha": 83.3,
+   "supplies": "50.0 kg K2O/ha",
+   "reason": "Potassium: soil K is rated medium, so the standard 50 kg K2O/ha is adjusted to 100% = 50.0 kg/ha.",
+   "kg_for_your_area": 67.4
+  }
+ ],
+ "alternatives": [
+  {
+   "option": "Single super phosphate instead of DAP",
+   "ssp_kg_per_ha": 390.6,
+   "urea_kg_per_ha": 271.7,
+   "mop_kg_per_ha": 83.3,
+   "note": "SSP supplies phosphorus (and sulphur) but no nitrogen, so urea covers the full N target."
+  }
+ ],
+ "notes": [],
+ "rules_status": "APPROXIMATE general values for Indian conditions. NOT verified against a specific publication.",
+ "rules_source": "TO BE VERIFIED: replace the crop doses and soil-test thresholds with figures from your State Agricultural University / ICAR package of practices (or Soil Health Card guidelines) and cite them in your report.",
+ "disclaimer": "These are ESTIMATES in kg per hectare from simplified rules. Verify with a proper soil test and your local agricultural extension officer before applying."
+}

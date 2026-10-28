@@ -1,0 +1,32 @@
+{
+ "districts_by_state": {
+  "Karnataka": [
+   "HASSAN",
+   "MYSORE"
+  ],
+  "Kerala": [
+   "IDUKKI"
+  ]
+ },
+ "crops": [
+  "Rice",
+  "Wheat"
+ ],
+ "seasons": [
+  "Kharif",
+  "Rabi"
+ ],
+ "dataset": "Crop Production in India (crop_production.csv)",
+ "metrics": {
+  "mae_t_per_ha": 1.16,
+  "rmse_t_per_ha": 3.67,
+  "r2": 0.915,
+  "baseline_crop_mean_mae_t_per_ha": 2.19,
+  "baseline_crop_mean_r2": 0.73
+ },
+ "test_years": [
+  2013,
+  2014,
+  2015
+ ]
+}

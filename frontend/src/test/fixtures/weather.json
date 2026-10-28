@@ -1,0 +1,107 @@
+{
+ "location": {
+  "name": "Mysore",
+  "country": "IN",
+  "latitude": 12.3,
+  "longitude": 76.6
+ },
+ "current": {
+  "temperature_c": 28,
+  "feels_like_c": 30,
+  "humidity_pct": 70,
+  "condition": "Clouds",
+  "description": "scattered clouds",
+  "wind_speed_ms": 2,
+  "rain_last_1h_mm": null,
+  "observed_at_utc": "2026-10-15T00:00:00+00:00"
+ },
+ "daily_forecast": [
+  {
+   "date": "2026-10-15",
+   "temp_min_c": 25,
+   "temp_max_c": 27,
+   "humidity_avg_pct": 80,
+   "rain_mm": 27.0,
+   "rain_probability_pct": 60,
+   "wind_max_ms": 3.0,
+   "condition": "Rain",
+   "partial_day": true,
+   "slots": 7
+  },
+  {
+   "date": "2026-10-16",
+   "temp_min_c": 25,
+   "temp_max_c": 27,
+   "humidity_avg_pct": 80,
+   "rain_mm": 36.0,
+   "rain_probability_pct": 60,
+   "wind_max_ms": 3.0,
+   "condition": "Rain",
+   "partial_day": false,
+   "slots": 8
+  },
+  {
+   "date": "2026-10-17",
+   "temp_min_c": 25,
+   "temp_max_c": 27,
+   "humidity_avg_pct": 80,
+   "rain_mm": 36.0,
+   "rain_probability_pct": 60,
+   "wind_max_ms": 3.0,
+   "condition": "Rain",
+   "partial_day": false,
+   "slots": 8
+  },
+  {
+   "date": "2026-10-18",
+   "temp_min_c": 25,
+   "temp_max_c": 27,
+   "humidity_avg_pct": 80,
+   "rain_mm": 36.0,
+   "rain_probability_pct": 60,
+   "wind_max_ms": 3.0,
+   "condition": "Rain",
+   "partial_day": false,
+   "slots": 8
+  },
+  {
+   "date": "2026-10-19",
+   "temp_min_c": 25,
+   "temp_max_c": 27,
+   "humidity_avg_pct": 80,
+   "rain_mm": 36.0,
+   "rain_probability_pct": 60,
+   "wind_max_ms": 3.0,
+   "condition": "Rain",
+   "partial_day": false,
+   "slots": 8
+  },
+  {
+   "date": "2026-10-20",
+   "temp_min_c": 25,
+   "temp_max_c": 25,
+   "humidity_avg_pct": 80,
+   "rain_mm": 9.0,
+   "rain_probability_pct": 60,
+   "wind_max_ms": 3.0,
+   "condition": "Rain",
+   "partial_day": true,
+   "slots": 1
+  }
+ ],
+ "alerts": [],
+ "irrigation_hints": [
+  "About 99.0 mm of rain is forecast over the next 3 days: consider delaying irrigation. This is a general hint, not a crop-specific schedule."
+ ],
+ "source": {
+  "provider": "OpenWeatherMap",
+  "fetched_at": "2026-10-27T06:35:29.543059+00:00",
+  "cached": false,
+  "stale": false
+ },
+ "notes": [
+  "Source: OpenWeatherMap free API (current weather + 5-day forecast in 3-hour steps, combined into days).",
+  "The first and last days can be partial (see partial_day). Rain fields the API omits are treated as 0 mm.",
+  "Alerts are general rules of thumb, not official warnings. Follow India Meteorological Department (IMD) advisories."
+ ]
+}

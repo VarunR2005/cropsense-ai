@@ -1,0 +1,55 @@
+:root {
+  --green: #2e7d32;
+  --green-dark: #1b5e20;
+  --leaf: #f1f8e9;
+  --earth: #8d6e63;
+  --cream: #fffaf0;
+}
+body { background: var(--cream); color: #263238; }
+a { color: var(--green); }
+.btn-success { background: var(--green); border-color: var(--green); }
+.btn-success:hover { background: var(--green-dark); border-color: var(--green-dark); }
+.btn-outline-success { color: var(--green); border-color: var(--green); }
+.card { border: 1px solid #e0e6d8; border-radius: 12px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); }
+.card-header { background: var(--leaf); font-weight: 600; }
+
+/* App shell */
+.app-shell { display: flex; min-height: 100vh; }
+.sidebar {
+  width: 250px; flex-shrink: 0; background: var(--green-dark); color: #fff; padding: 1rem 0.75rem;
+  position: sticky; top: 0; height: 100vh; overflow-y: auto;
+}
+.sidebar-brand { font-size: 1.25rem; font-weight: 700; padding: 0.5rem 0.75rem 1.25rem; }
+.sidebar-link {
+  display: block; width: 100%; text-align: left; background: none; border: 0; color: #e8f5e9;
+  padding: 0.55rem 0.75rem; border-radius: 8px; text-decoration: none; margin-bottom: 2px; font-size: 0.95rem;
+}
+.sidebar-link:hover { background: rgba(255, 255, 255, 0.12); color: #fff; }
+.sidebar-link.active { background: var(--green); color: #fff; font-weight: 600; }
+.sidebar-logout { margin-top: 1rem; border-top: 1px solid rgba(255, 255, 255, 0.2); border-radius: 0 0 8px 8px; }
+.main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.topbar { display: flex; align-items: center; gap: 0.75rem; padding: 0.6rem 1.25rem; background: #fff; border-bottom: 1px solid #e0e6d8; }
+.content { padding: 1.5rem; max-width: 1200px; width: 100%; }
+.backdrop { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.4); z-index: 1040; }
+@media (max-width: 767.98px) {
+  .sidebar { position: fixed; left: -260px; z-index: 1050; transition: left 0.2s; }
+  .sidebar.open { left: 0; }
+  .content { padding: 1rem; }
+}
+
+/* Cards and numbers */
+.stat-card .stat-icon { font-size: 1.6rem; }
+.stat-card .stat-value { font-size: 1.7rem; font-weight: 700; color: var(--green-dark); line-height: 1.2; }
+.stat-card .stat-label { color: #607d8b; font-size: 0.9rem; }
+.big-number { font-size: 2.2rem; font-weight: 700; color: var(--green-dark); line-height: 1.1; }
+.big-number small { font-size: 1rem; font-weight: 500; color: #607d8b; }
+
+/* Landing */
+.hero { background: linear-gradient(135deg, var(--green-dark), var(--green)); color: #fff; padding: 5rem 0 4rem; }
+.hero h1 { font-weight: 800; }
+.feature-icon { font-size: 2rem; }
+.earth-band { background: var(--leaf); border-top: 4px solid var(--earth); }
+
+/* Auth pages */
+.auth-wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 1rem; background: var(--leaf); }
+.auth-card { width: 100%; max-width: 420px; }

@@ -1,0 +1,138 @@
+{
+ "generated_at": "2026-10-27T06:35:29+00:00",
+ "totals": {
+  "yield_predictions": 3,
+  "crop_recommendations": 2,
+  "fertilizer_recommendations": 1,
+  "irrigation_plans": 2,
+  "disease_detections": null
+ },
+ "recent_predictions": [
+  {
+   "id": 3,
+   "crop": "Wheat",
+   "state": "Karnataka",
+   "district": "HASSAN",
+   "season": "Rabi",
+   "year": 2015,
+   "area_ha": 1.0,
+   "predicted_yield_t_per_ha": 2.0,
+   "predicted_production_t": 2.0,
+   "historical_mean_t_per_ha": null,
+   "difference_vs_history_pct": null,
+   "created_at": "2026-10-27T06:35:29"
+  },
+  {
+   "id": 2,
+   "crop": "Rice",
+   "state": "Karnataka",
+   "district": "MYSORE",
+   "season": "Kharif",
+   "year": 2015,
+   "area_ha": 2.0,
+   "predicted_yield_t_per_ha": 3.1,
+   "predicted_production_t": 6.2,
+   "historical_mean_t_per_ha": null,
+   "difference_vs_history_pct": null,
+   "created_at": "2026-10-27T06:35:29"
+  },
+  {
+   "id": 1,
+   "crop": "Rice",
+   "state": "Karnataka",
+   "district": "MYSORE",
+   "season": "Kharif",
+   "year": 2015,
+   "area_ha": 5.0,
+   "predicted_yield_t_per_ha": 3.12,
+   "predicted_production_t": 15.6,
+   "historical_mean_t_per_ha": null,
+   "difference_vs_history_pct": null,
+   "created_at": "2026-10-27T06:35:29"
+  }
+ ],
+ "recent_crop_recommendations": [
+  {
+   "id": 2,
+   "top_crop": "rice",
+   "top_3": [
+    "rice",
+    "jute",
+    "maize"
+   ],
+   "created_at": "2026-10-27T06:35:29"
+  },
+  {
+   "id": 1,
+   "top_crop": "rice",
+   "top_3": [
+    "rice",
+    "jute",
+    "maize"
+   ],
+   "created_at": "2026-10-27T06:35:29"
+  }
+ ],
+ "disease_history": {
+  "available": false,
+  "items": [],
+  "note": "Plant disease detection is not built yet, so there is no history to show."
+ },
+ "weather_summary": {
+  "city": "Mysuru,IN",
+  "fetched_at": "2026-10-27T06:35:29.543059+00:00",
+  "temperature_c": 28,
+  "humidity_pct": 70,
+  "condition": "Clouds",
+  "forecast_today_rain_mm": 27.0,
+  "alerts": 0,
+  "first_alert": null
+ },
+ "weather_note": null,
+ "yield_comparison_chart": {
+  "labels": [
+   "Rice / Karnataka (2015)",
+   "Rice / Karnataka (2015)",
+   "Wheat / Karnataka (2015)"
+  ],
+  "predicted_t_per_ha": [
+   3.12,
+   3.1,
+   2.0
+  ],
+  "historical_mean_t_per_ha": [
+   null,
+   null,
+   null
+  ]
+ },
+ "monthly_trend": [
+  {
+   "month": "2026-10",
+   "predictions": 3,
+   "total_production_t": 23.8
+  }
+ ],
+ "seasonal_trend": [
+  {
+   "season": "Kharif",
+   "predictions": 2,
+   "total_production_t": 21.8,
+   "avg_predicted_yield_t_per_ha": 3.11
+  },
+  {
+   "season": "Rabi",
+   "predictions": 1,
+   "total_production_t": 2.0,
+   "avg_predicted_yield_t_per_ha": 2.0
+  }
+ ],
+ "farms": {
+  "available": false,
+  "items": [],
+  "note": "Saved farm details are not built yet (planned with the profile page)."
+ },
+ "notes": [
+  "Trends use your latest 1000 saved predictions. All figures are model estimates, not guarantees."
+ ]
+}
